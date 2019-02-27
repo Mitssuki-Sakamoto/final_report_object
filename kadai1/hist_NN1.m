@@ -1,4 +1,4 @@
-
+load('hist.mat');
 n = 0;
 data_pos = histgram(1:100,:);
 data_neg = histgram(101:200,:);
