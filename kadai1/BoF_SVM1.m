@@ -2,6 +2,7 @@ load('bovw1.mat');
 training_data = bovw1.';
 n = 100;
 idx=[1:n];
+cv = 5;
 data_pos = training_data(1:n,:);
 data_neg = training_data(n + 1:2 * n,:);
 

@@ -27,7 +27,7 @@ for i=1:cv
         n = n + 1;
     end
  end
- ac = n/40
+ ac = n/40;
  accuracy=[accuracy ac];
  n = 0;
 end
