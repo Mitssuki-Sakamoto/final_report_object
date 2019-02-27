@@ -4,7 +4,7 @@ n = 100;
 idx=[1:n];
 data_pos = training_data(1:n,:);
 data_neg = training_data(n + 1:2 * n,:);
-
+cv = 5;
 for i=1:cv 
   eval_pos =data_pos(find(mod(idx,cv)==(i-1)),:);
   train_pos=data_pos(find(mod(idx,cv)~=(i-1)),:);
